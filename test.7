@@ -4,4 +4,6 @@ import os
 
 def clear_screen():
 os.system('cls' if os.name == 'nt' else 'clear')
-
+def slow_print(text, delay=0.05):
+    for char in text:
+        sys.stdout.write(char)
